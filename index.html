@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="build/output.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
+    <title>Space</title>
+</head>
+<body class="bg-mobile-background bg-cover h-screen md:bg-tablet-background lg:bg-desktop-background">
+
+    <div id="sidenav" class="sidenav flex flex-col text-center text-[#FFFFFF]">
+        <svg class="absolute right-6 top-8" onclick="closeNav()" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+        <div id="nav-element" class="flex flex-col text-left tracking-widest pl-10 pt-20 barlow-condensed text-[25px]">
+
+            <div class="font-thin"> <span class="font-bold">00</span> <a href="/index.html">HOME</a> </div>
+            <div class="font-thin mt-8"> <span class="font-bold w-28">01</span> <a href="/build/destinations.html">DESTINATIONS</a>  </div>
+            <div class="font-thin mt-8"> <span class="font-bold">02</span> <a href="/build/crew.html">CREW</a>  </div>
+            <div class="font-thin mt-8"> <span class="font-bold">03</span> <a href="">TECHNOLOGY</a>  </div>
+            
+        </div>
+    </div>
+
+    <div class="z-0 flex flex-row h-20 sm:h-24 bg-transparent justify-between pr-4 sm:pt-5 pl-4 sm:pr-0">
+        <svg class="mt-auto lg:ml-5 sm:relative mb-auto" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+        <svg onclick="openNav()" id="hamburger" class="mt-auto sm:hidden  mb-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+
+        <hr class="w-[28rem] hidden md:flex z-10 relative left-[80px] mt-auto border-t-[#484b54] mb-auto">
+
+        <div class="hidden md:flex align-middle text-[#FFFFFF] font-thin bg-[#FFFFFF] rounded-s barlow-condensed text-[17px] bg-opacity-10   backdrop-blur-[15px] flex-row">
+            
+            <a class="mt-auto mb-auto" href="/index.html"><button class="pr-16 hover:translate-y-1 transition-[0.5s] pl-20 tracking-widest"> <span class="font-bold">00</span> HOME </button></a>
+            <a class="mt-auto mb-auto" href="/build/destinations.html">  <button class="pr-16 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span class="font-bold">01</span> DESTINATION </button></a>
+            <a class="mt-auto mb-auto" href="/build/crew.html">  <button class="pr-16 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span class="font-bold">02</span> CREW</button></a>
+            <a class="mt-auto mb-auto" href="">  <button class="pr-32 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span class="font-bold">03</span> TECHNOLOGY</button></a>
+        </div>
+
+    </div>
+
+    
+
+
+    <div class="z-0 flex sm:relative sm:top-14 flex-col lg:flex-row min-w-full text-center justify-center lg:justify-between lg:w-96 mt-16 lg:mt-10">
+        <div class="flex flex-col lg:w-[30rem]  lg:ml-52">
+            <h2 class="text-[22px] lg:text-[32px] lg:text-left text-[#D0D6F9] barlow-condensed tracking-[4.75px]">SO, YOU WANT TO TRAVEL TO</h2>
+            <h1 class="text-[#FFFFFF] text-[100px] lg:text-[150px] bellefair lg:text-left mt-4">SPACE</h1>
+            <p class="text-[#D0D6F9] text-[18px] mt-5 lg:mt-1 pl-5 lg:pl-0 lg:text-left tracking-wide font-thin barlow-condensed pr-5">Lets face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge on it.
+                Well sit back, and relax because we'll give you a truly out of this world experience.
+            </p>
+        </div>
+        <a class="bg-[#FFFFFF] grid place-content-center btn h-44 w-44 lg:w-56 lg:h-56 mr-auto ml-auto mt-20 rounded-full" href="build/destinations.html">
+            <button><h1 class="text-[#0B0D17] bellefair text-[25px] lg:text-[30px]">EXPLORE</h1></button>
+        </a>
+    </div>
+    
+
+    <script src="build/script.js"></script>
+</body>
+</html>

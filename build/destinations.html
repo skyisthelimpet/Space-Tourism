@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="output.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
+    <title>Space</title>
+</head>
+<body class="bg-dest-m-bg bg-cover b h-screen transition-[2s] md:bg-dest-t-bg lg:bg-dest-d-bg">
+
+    <div id="sidenav" class="sidenav flex flex-col text-center text-[#FFFFFF]">
+        <svg class="absolute right-6 top-8" onclick="closeNav()" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+        <div id="nav-element" class="flex flex-col text-left tracking-widest pl-10 pt-20 barlow-condensed text-[25px]">
+
+            <div class="font-thin"> <span class="font-bold">00</span> <a href="/index.html">HOME</a> </div>
+            <div class="font-thin mt-8"> <span class="font-bold w-28">01</span> <a href="/build/destinations.html">DESTINATIONS</a>  </div>
+            <div class="font-thin mt-8"> <span class="font-bold">02</span> <a href="/build/crew.html">CREW</a>  </div>
+            <div class="font-thin mt-8"> <span class="font-bold">03</span> <a href="">TECHNOLOGY</a>  </div>
+            
+        </div>
+    </div>
+
+    <div class="z-0 flex flex-row h-20 sm:h-24 bg-transparent justify-between pr-4 sm:pt-5 pl-4 sm:pr-0">
+        <svg class="mt-auto lg:ml-5 sm:relative mb-auto" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+        <svg onclick="openNav()" id="hamburger" class="mt-auto sm:hidden  mb-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+
+        <hr class="w-[28rem] hidden md:flex z-10 relative left-[80px] mt-auto border-t-[#484b54] mb-auto">
+
+        <div class="hidden md:flex align-middle text-[#FFFFFF] font-thin bg-[#FFFFFF] rounded-s barlow-condensed text-[17px] bg-opacity-10   backdrop-blur-[15px] flex-row">
+            
+            <a class="mt-auto mb-auto" href="/index.html"><button class="pr-16 hover:translate-y-1 transition-[0.5s] pl-20 tracking-widest"> <span class="font-bold">00</span> HOME </button></a>
+            <a class="mt-auto mb-auto" href="/build/destinations.html">  <button class="pr-16 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span class="font-bold">01</span> DESTINATION </button></a>
+            <a class="mt-auto mb-auto" href="/build/crew.html">  <button class="pr-16 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span class="font-bold">02</span> CREW</button></a>
+            <a class="mt-auto mb-auto" href="">  <button class="pr-32 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span class="font-bold">03</span> TECHNOLOGY</button></a>
+        </div>
+
+    </div>
+
+
+    <div class="lg:flex lg:flex-row lg:justify-between lg:pr-36 lg:pl-36"> <!-- MAIN DIV -->
+        
+        <div class="flex flex-col text-center lg:text-left text-[#FFFFFF] mt-5 barlow-condensed tracking-widest text-[25px]">
+
+            <h1 class="lg:ml-[3.2rem]"> <span class="text-[#4f4d57] font-bold mr-4">01</span> <span>PICK YOUR DESTINATION</span> </h1>
+    
+            <img id="planet-photo" class="w-[50%] lg:w-[85%] hover:translate-y-1 transition-[0.5s] lg:pl-20 mr-auto ml-auto mt-10" src="/assets/destination/image-moon.png" alt="Moon picture">
+        </div>
+
+        <div class="flex flex-col text-center lg:mt-16 lg:w-[35%] text-[#FFFFFF] bellefair tracking-widest text-[80px]">
+            <div id="dest-div" class="flex flex-row barlow-condensed mt-5 text-lg justify-evenly lg:justify-start text-[#D0D6F9]">
+                <button id="Moon"  class="peer/moon lg:mr-10  myBtn tracking-widest hover:translate-y-1 transition-[0.5s] border-b-2">MOON</button>
+                <button id="Mars"  class="lg:mr-10 myBtn hover:translate-y-1 transition-[0.5s] tracking-widest">MARS</button>
+                <button id="Europa" class="lg:mr-10 myBtn hover:translate-y-1 transition-[0.5s] tracking-widest">EUROPA</button>
+                <button id="Titan"  class="lg:mr-10  myBtn hover:translate-y-1 transition-[0.5s] tracking-widest">TITAN</button>
+            </div>
+            <h1 id="destination-header" class="mt-5 lg:text-left pl-0">MOON</h1>
+            <p id="dest-paragraph" class="text-[17px] pl-8 pr-8 lg:text-left lg:pl-0 lg:pr-16 text-[#d0d6f997] barlow-condensed leading-normal tracking-wide">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed.
+                 While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+            <hr class="ml-9 mr-9 mt-5 lg:ml-0 lg:mr-0">
+
+            <div class="lg:flex lg:flex-row lg:text-left">
+
+                <div class="lg:mr-10">
+                    <h1 class="font-thin text-[#D0D6F9] barlow-condensed text-[22px] lg:text-[18px] mt-4 tracking-widest">AVG. DISTANCE</h1>
+                    <h1 id="distance" class=" text-[#FFFFFF] bellefair text-[30px] lg:text-[25px] mt-1 tracking-widest">384,400 KM</h1>
+                </div>
+
+                <div>
+                    <h1 class="font-thin text-[#D0D6F9] barlow-condensed text-[22px] lg:text-[18px] mt-4 tracking-widest">EST. TRAVEL TIME</h1>
+                    <h1 id="travel" class=" text-[#FFFFFF] bellefair text-[30px] lg:text-[25px] mt-1 tracking-widest">3 DAYS</h1>
+                </div>
+            </div>
+        </div>                                              
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

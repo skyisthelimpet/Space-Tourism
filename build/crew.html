@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="output.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
+        rel="stylesheet">
+
+    <title>Space</title>
+</head>
+
+<body class="bg-crew-m-bg bg-cover b h-screen transition-[2s] md:bg-crew-t-bg lg:bg-crew-d-bg">
+
+    <div id="sidenav" class="sidenav flex flex-col text-center text-[#FFFFFF]">
+        <svg class="absolute right-6 top-8" onclick="closeNav()" xmlns="http://www.w3.org/2000/svg" width="20"
+            height="21">
+            <g fill="#D0D6F9" fill-rule="evenodd">
+                <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+                <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+            </g>
+        </svg>
+        <div id="nav-element" class="flex flex-col text-left tracking-widest pl-10 pt-20 barlow-condensed text-[25px]">
+
+            <div class="font-thin"> <span class="font-bold">00</span> <a href="/index.html">HOME</a> </div>
+            <div class="font-thin mt-8"> <span class="font-bold w-28">01</span> <a
+                    href="/build/destinations.html">DESTINATIONS</a> </div>
+            <div class="font-thin mt-8"> <span class="font-bold">02</span> <a href="">CREW</a> </div>
+            <div class="font-thin mt-8"> <span class="font-bold">03</span> <a href="">TECHNOLOGY</a> </div>
+
+        </div>
+    </div>
+
+    <div class="z-0 flex flex-row h-20 sm:h-24 bg-transparent justify-between pr-4 sm:pt-5 pl-4 sm:pr-0">
+        <svg class="mt-auto lg:ml-5 sm:relative mb-auto" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+                <circle cx="24" cy="24" r="24" fill="#FFF" />
+                <path fill="#0B0D17"
+                    d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+            </g>
+        </svg>
+        <svg onclick="openNav()" id="hamburger" class="mt-auto sm:hidden  mb-auto" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="21">
+            <g fill="#D0D6F9" fill-rule="evenodd">
+                <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+            </g>
+        </svg>
+
+        <hr class="w-[28rem] hidden md:flex z-10 relative left-[80px] mt-auto border-t-[#484b54] mb-auto">
+
+        <div
+            class="hidden md:flex align-middle text-[#FFFFFF] font-thin bg-[#FFFFFF] rounded-s barlow-condensed text-[17px] bg-opacity-10   backdrop-blur-[15px] flex-row">
+
+            <a class="mt-auto mb-auto" href="/index.html"><button
+                    class="pr-16 hover:translate-y-1 transition-[0.5s] pl-20 tracking-widest"> <span
+                        class="font-bold">00</span> HOME </button></a>
+            <a class="mt-auto mb-auto" href="/build/destinations.html"> <button
+                    class="pr-16 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span
+                        class="font-bold">01</span> DESTINATION </button></a>
+            <a class="mt-auto mb-auto" href="/build/crew.html"> <button
+                    class="pr-16 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span
+                        class="font-bold">02</span> CREW</button></a>
+            <a class="mt-auto mb-auto" href=""> <button
+                    class="pr-32 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span
+                        class="font-bold">03</span> TECHNOLOGY</button></a>
+        </div>
+
+    </div>
+
+    <div class="text-white lg:flex text-center text-[25px] lg:pl-48 lg:pr-28 lg:justify-between lg:border-b ">
+
+        <div class="lg:flex lg:flex-col lg:text-left  lg:w-full lg:h-full "> <!-- BURASI -->
+
+            <h1 class="barlow-condensed mt-5 tracking-widest " > <span class="text-[#4f4d57] font-bold mr-4">02</span>  <span class="">MEET YOUR CREW</span></h1>
+
+            <div class="lg:hidden">
+                <img id='crew-mobile-photo' class="w-[50%] mr-auto ml-auto mt-10" src="/assets/crew/image-douglas-hurley.png" id="crew-mobile-photo" alt="Photo of a crew member.">
+                <hr class="mr-4 ml-4 border-t-[#484b54]">
+            </div>
+
+
+            <div class="lg:flex lg:flex-row lg:justify-between lg:align-middle">
+                <div class="flex flex-col sm:flex-col-reverse lg:w-[30rem] lg:pb-28 lg:pt-24 lg:align-middle">
+                    
+                    <div id="crew-div" class="flex flex-row  justify-center lg:justify-start mt-5 lg:relative lg:top-12">
+                        <button id="Douglas Hurley" class="m-2 hover:bg-[#85868b] hover:translate-y-1 transition-[0.5s]  bg-[#474a52] actve rounded-full w-4 h-4 lg:w-6 lg:h-6"></button>
+                        <button id="Mark Shuttle" class="m-2 hover:bg-[#85868b] hover:translate-y-1 transition-[0.5s]  bg-[#474a52] rounded-full w-4 h-4 lg:w-6 lg:h-6"></button>
+                        <button id="Victor Glover" class="m-2 hover:bg-[#85868b] hover:translate-y-1 transition-[0.5s]  bg-[#474a52] rounded-full w-4 h-4 lg:w-6 lg:h-6"></button>
+                        <button id="Anous Ansari" class="m-2 hover:bg-[#85868b] hover:translate-y-1 transition-[0.5s]  bg-[#474a52] rounded-full w-4 h-4 lg:w-6 lg:h-6"></button>
+                    </div> 
+
+                    <div class="mt-2">
+                        <h1 id="role" class="bellefair text-[#919397]">COMMANDER</h1>
+                        <h1 id="name" class="bellefair text-[#FFFFFF] text-[25px] lg:text-[50px]">DOUGLAS HURLEY</h1>
+                        <p  id="bio" class="text-[17px] lg:text-[20px]  text-[#d0d6f997] pl-5 pr-5 lg:pl-0 lg:pr-0 barlow-condensed ">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut.
+                            He launched into space for the third time as commander of Crew Dragon Demo-2.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="hidden lg:flex  justify-end mr-20">
+                    <img id="crew-desktop-photo" class="w-[70%]"  src="/assets/crew/image-douglas-hurley.png" alt="Photo of a crew member">
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="crew.js"></script>
+</body>
+
+</html>
