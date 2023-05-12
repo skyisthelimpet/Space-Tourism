@@ -27,7 +27,7 @@ crewDiv.addEventListener('click', async function (event) {
         }
     }
 
-    const response = await fetch("/data.json");
+    const response = await fetch("./../data.json");
     const jsonData = await response.json();
 
     const destList = {
