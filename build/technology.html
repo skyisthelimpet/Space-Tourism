@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="output.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
+    <title>Space</title>
+</head>
+<body class="bg-tech-m-bg bg-cover h-screen transition-[2s] md:bg-tech-t-bg lg:bg-tech-d-bg">
+
+    <div id="sidenav" class="sidenav flex flex-col text-center text-[#FFFFFF]">
+        <svg class="absolute right-6 top-8" onclick="closeNav()" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+        <div id="nav-element" class="flex flex-col text-left tracking-widest pl-10 pt-20 barlow-condensed text-[25px]">
+
+            <div class="font-thin"> <span class="font-bold">00</span> <a href="/index.html">HOME</a> </div>
+            <div class="font-thin mt-8 "> <span class="font-bold w-28">01</span> <a href="/build/destinations.html">DESTINATIONS</a>  </div>
+            <div class="font-thin mt-8"> <span class="font-bold">02</span> <a href="./../build/crew.html">CREW</a>  </div>
+            <div class="font-thin mt-8 border-r-4"> <span class="font-bold">03</span> <a href="">TECHNOLOGY</a>  </div>
+            
+        </div>
+    </div>
+
+    <div class="z-0 flex flex-row h-20 sm:h-24 bg-transparent justify-between pr-4 sm:pt-5 pl-4 sm:pr-0">
+        <svg class="mt-auto lg:ml-5 sm:relative mb-auto" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+        <svg onclick="openNav()" id="hamburger" class="mt-auto sm:hidden  mb-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+
+        <hr class="w-[28rem] hidden md:flex z-10 relative left-[80px] mt-auto border-t-[#484b54] mb-auto">
+
+        <div class="hidden md:flex align-middle text-[#FFFFFF] font-thin bg-[#FFFFFF] rounded-s barlow-condensed text-[17px] bg-opacity-10   backdrop-blur-[15px] flex-row">
+            
+            <a class="mt-auto mb-auto" href="./../index.html"><button class="pr-16 hover:translate-y-1 transition-[0.5s] pl-20 tracking-widest"> <span class="font-bold">00</span> HOME </button></a>
+            <a class="mt-auto mb-auto" href="./../build/destinations.html">  <button class="pr-16 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span class="font-bold">01</span> DESTINATION </button></a>
+            <a class="mt-auto mb-auto" href="./../build/crew.html">  <button class="pr-16 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span class="font-bold">02</span> CREW</button></a>
+            <a class="mt-auto mb-auto" href="./../build/technology.html">  <button class="pr-32 hover:translate-y-1 transition-[0.5s] tracking-widest"> <span class="font-bold">03</span> TECHNOLOGY</button></a>
+        </div>
+
+    </div>
+
+    <h1 class="text-white lg:text-left text-center mt-5 lg:ml-52 tracking-widest barlow-condensed text-[25px]"> <span class="text-[#4f4d57] tracking-widest text-[25px] barlow-condensed font-bold mr-4">03</span> SPACE LAUNCH 101</h1>
+
+    <div class="text-white flex flex-col lg:flex-row-reverse  lg:justify-between mt-10 lg:mt-12 h-[75%]">
+
+        <img id="tech-p-desktop" class="hidden lg:block relative bottom-7 w-[30%] h-[85%] rounded-tl-lg rounded-bl-lg shadow-2xl" src="./../assets/technology/image-launch-vehicle-portrait.jpg" alt="Photo">
+        <img id="tech-p-mobile" class="lg:hidden" src="./../assets/technology/image-launch-vehicle-landscape.jpg" alt="Photo.">
+
+        <div class="lg:flex lg:flex-row lg:ml-20">
+
+
+            <div id="tech-div" class="flex flex-row lg:flex-col mt-10 lg:mt-14 justify-center bellefair lg:w-min lg:justify-start">
+                <button id="Launch vehicle" class="w-16 h-16 bg-[#FFFFFF] text-black lg:w-20 lg:mb-5 lg:h-20 rounded-full lg:text-2xl hover:translate-y-1 transition-[0.5s] mr-2 ml-2 border border-[#4c4d56]">1</button>
+                <button id="Spaceport" class="w-16 h-16 lg:w-20 lg:mb-5 lg:h-20 rounded-full lg:text-2xl hover:translate-y-1 transition-[0.5s] mr-2 ml-2 border border-[#4c4d56]">2</button>
+                <button id="Space capsule" class="w-16 h-16 lg:w-20 lg:mb-5 lg:h-20 rounded-full lg:text-2xl hover:translate-y-1 transition-[0.5s] mr-2 ml-2 border border-[#4c4d56]">3</button>
+            </div>
+
+            <div class="flex flex-col lg:grid justify-center text-center lg:text-left mt-8 lg:ml-7 lg:mt-14 lg:place-content-start">
+                <h1 class="text-[20px] text-[#d0d6f9] barlow-condensed tracking-widest">THE TERMINOLOGY...</h1>
+                <h1 id="tech-header" class="text-[30px] lg:text-[60px] mt-2 text-[#FFFFFF] bellefair tracking-wider">LAUNCH VEHICLE</h1>
+                <p id="tech-paragraph" class="barlow-condensed lg:pr-40 text-[#d0d6f9] mt-2 pl-4 lg:pl-0 pr-4 text-[18px]">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation.
+                    Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+                </p>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./../build/technology.js"></script>
+</body>
+</html>
