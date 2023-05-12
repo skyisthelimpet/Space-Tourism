@@ -20,7 +20,7 @@ try {
 
         var index = event.target.id;
 
-        const response = await fetch("/data.json");
+        const response = await fetch("./../data.json");
         const jsonData = await response.json();
 
         const destList = {
