@@ -801,7 +801,7 @@ video {
 }
 
 .bg-dest-m-bg {
-  background-image: url('/assets/backgrounds/background-destination-mobile.jpg');
+  background-image: url('./../assets/backgrounds/background-destination-mobile.jpg');
 }
 
 .bg-mobile-background {
@@ -1142,7 +1142,7 @@ button{
   }
 
   .md\:bg-dest-t-bg {
-    background-image: url('/assets/backgrounds/background-destination-tablet.jpg');
+    background-image: url('./../assets/backgrounds/background-destination-tablet.jpg');
   }
 
   .md\:bg-tablet-background {
@@ -1316,7 +1316,7 @@ button{
   }
 
   .lg\:bg-dest-d-bg {
-    background-image: url('/assets/backgrounds/background-destination-desktop.jpg');
+    background-image: url('./../assets/backgrounds/background-destination-desktop.jpg');
   }
 
   .lg\:pl-0 {
